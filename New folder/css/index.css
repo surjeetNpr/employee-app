@@ -1,0 +1,214 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.header{
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #EE534F;
+}
+.header h5{
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 28px;
+    color: #fff;
+}
+.upper-btn-box{
+    width: 100%;
+    height: 100px;
+
+    padding: 30px;
+    display: flex;
+}
+.upper-btn-box .left-box{
+    width: 50%;
+    height: 100px;
+
+    
+    
+    
+}
+.upper-btn-box .rigth-box{
+    width: 50%;
+    height: 100px;
+    
+    
+
+    
+}
+.upper-btn-box .left-box button ,.upper-btn-box .rigth-box button{
+    border: none;
+    outline: none;
+    background-color: #4286F5;
+    padding: 13px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    margin: 0px 10px;
+
+}
+.upper-btn-box .rigth-box i{
+    font-size: 25px;
+    color: #4286F5;
+    
+
+} 
+.upper-btn-box .rigth-box input{
+    outline: none;
+    border: none;
+    width: 50%;
+    padding: 10px;
+    
+    border-bottom: 3px solid  #4286F5;
+    font-size: 12px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+/*start table coding*/
+.table-box{
+    width: 100%;
+    padding: 30px;
+}
+.table-box table{
+    width: 100%;
+    font-size: 12px;
+}
+.table-box table tr th{
+    border-right: 1px solid #ccc;
+    padding: 20px 0px 0px 0px ;
+    font-family: Verdana;
+    font-family: 20px;
+    border-bottom: 1px solid #ccc;
+
+}
+.table-box table tr td{
+
+    border-right: 1px solid #ccc;
+    padding: 20px 0px 5px ;
+    text-align: center;
+    font-family: Verdana;
+    border-bottom: 1px solid #ccc;
+}
+.table-box table tr td button{
+    width: 40%;
+    border: none;
+    outline: none;
+    background-color: #4286F5;
+    padding: 5px;
+    font-size: 12px;
+    font-family: Verdana;
+    color: #fff;
+    padding: 5px 0px 5px;
+}
+/* start model programming */
+.model{
+    width:0%;
+    height: auto;
+    background-color: #f2f2f2;
+    position: fixed;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    border-top: 20px groove #4286F5;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5e ease-in-out;
+    
+}
+.model.active{
+    opacity: 1;
+    z-index: 1;
+    width: 70%;
+}
+.model .close-icon{
+    position: absolute;
+    right: -20px;
+    top: -38px;
+    font-size: 25px;
+    padding: 10px;
+    color: #EE534F;
+
+}
+.model .left-model{
+    width: 40%;
+    height: auto;
+    background-color:#f2f2f2;
+    border-right: 5px groove #4286F5;
+}
+.model .left-model .img-box{
+    width: 100%;
+    height: 200px;
+    
+    display: flex;
+    padding: 20px;
+    position: relative;
+}
+
+.model .left-model .img-box img{
+    border-radius: 10px;
+    
+}
+.model .left-model .img-box i{
+    font-size: 30px;
+    position: absolute;
+    padding: 1px;
+    right: 60px;
+    top: 90px;
+    
+}
+.model .left-model .img-box input{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 60px;
+    top: 90px;
+    opacity: 0;
+}
+.model .rigth-model{
+    width: 70%;
+    height: 100%;
+    padding: 30px;
+    
+}
+.model .rigth-model .input-box{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.model .rigth-model .input-box label{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 5px;
+}
+.model .rigth-model .input-box input{
+    width: 70%;
+    margin: 10px 0px;
+    border: none;
+    padding: 2px;
+    outline: none;
+    border-bottom: 2px solid #4286F5;
+    background-color: transparent;
+    font-size: 10px;
+    
+}
+.model .rigth-model .input-box button{
+
+    width: 48%;
+    border: none;
+    outline: none;
+    background-color: #4286F5;
+    padding: 13px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    margin: 5px 10px;
+
+}
+.model .rigth-model .input-box button:disabled{
+    filter: grayscale(80%);
+}
